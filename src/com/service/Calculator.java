@@ -7,11 +7,11 @@ import com.purse.Purse;
 public class Calculator {
 
 	private static long amount = 0;
-	private int totalCash;
+	//private int totalCash;
 	
 	public long calculateCash(Purse purse) {
 		
-		
+		System.out.println("doing");
 		purse.getNotes().forEach(e -> {
 			amount = amount + e.getNum();
 		});
@@ -20,7 +20,7 @@ public class Calculator {
 			amount = amount + e.getNumber();
 		});
 		
-		
+		System.out.println(amount);
 		return amount;
 	}
 	
@@ -30,13 +30,19 @@ public class Calculator {
 		
 		purse.getCard().forEach(e->{
 			
+			if(e instanceof DebitCard){
 			DebitCard dc =  (DebitCard)e;
 			amount = amount + dc.getBalance();
+			}
 			
 			
+	
 		});
 		
-		return totalCash;
+		System.out.println("In debitCard");
+		System.out.println(amount);
+		
+		return amount;
 	}
 	
 
@@ -46,6 +52,7 @@ public class Calculator {
 	 long sum=0;
 	 for(Card card : purse.getCard()){
 //		 if(card instanceof DebitCard)count++;
+		
 		 
 		 if(card instanceof DebitCard) {
 		 DebitCard db =(DebitCard)card;

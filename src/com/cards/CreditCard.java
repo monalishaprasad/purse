@@ -16,11 +16,11 @@ public class CreditCard extends Card {
 	public void setNameOnCard(String nameOnCard) {
 		this.nameOnCard = nameOnCard;
 	}
-	public String getDebitCardType() {
+	public String getCreditCardType() {
 		return CreditCardType;
 	}
-	public void setDebitCardType(String debitCardType) {
-		this.CreditCardType = debitCardType;
+	public void setCreditCardType(String creditCardType) {
+		this.CreditCardType = creditCardType;
 	}
 	public String getBankName() {
 		return bankName;

@@ -32,7 +32,7 @@ public class Notes {
 	public String getPaper() {
 		return paper;
 	}
-	public void setPaer(String paper) {
+	public void setPaper(String paper) {
 		this.paper= paper;
 	}
 }
