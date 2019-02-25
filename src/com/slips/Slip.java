@@ -3,7 +3,7 @@ package com.slips;
 public class Slip {
 	private int billAmount;
 	private String slipType;
-	private String desccription;
+	private String description;
 
 	public int getBillAmount() {
 		return billAmount;
@@ -22,16 +22,16 @@ public class Slip {
 	}
 
 	public String getDesccription() {
-		return desccription;
+		return description;
 	}
 
 	public void setDesccription(String desccription) {
-		this.desccription = desccription;
+		this.description = desccription;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Slip [billAmount=%s, slipType=%s, desccription=%s]", billAmount, slipType, desccription);
+		return String.format("Slip [billAmount=%s, slipType=%s, desccription=%s]", billAmount, slipType, description);
 	}
 
 }

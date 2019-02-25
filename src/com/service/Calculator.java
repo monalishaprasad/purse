@@ -8,7 +8,6 @@ public class Calculator {
 
 	private static long amount = 0;
 	private int totalCash;
-	private static int cardNum=0;
 	
 	public long calculateCash(Purse purse) {
 		
@@ -43,7 +42,7 @@ public class Calculator {
 
  public int numberOfCards(Purse purse) {
 	 
-	 int count = 0;
+	 //int count = 0;
 	 long sum=0;
 	 for(Card card : purse.getCard()){
 //		 if(card instanceof DebitCard)count++;
@@ -56,5 +55,9 @@ public class Calculator {
 	 
 	return purse.getCard().size();
  }	
-	 
+public int numberOfSlips(Purse purse){
+	
+	return purse.getSlips().size();
+}
+ 
  }
