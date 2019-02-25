@@ -7,6 +7,7 @@ import com.currency.Coins;
 import com.currency.Notes;
 import com.slips.Slip;
 
+// comment added
 public class Purse {
 	private String colour;
 	private String pursetype;
